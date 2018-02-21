@@ -9,7 +9,7 @@ import { addExpense,addExpenseDatabase } from './actions/expenses';
 import { setTextFilter, sortByDate, sortByAmount } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
 import 'react-dates/lib/css/_datepicker.css';
-import $ from 'jquery';
+//import $ from 'jquery';
 const store = configureStore();
 store.subscribe(()=>{
     const state = store.getState();
@@ -30,10 +30,10 @@ var appRoot = document.getElementById('app');
 // setTimeout(()=>{
 //   store.dispatch(setTextFilter('bill'));
 // },3000);
-$.getJSON("/api/v1/expenses",(data)=>{
-    console.log("data",data)
-    data.forEach((i)=>{store.dispatch(addExpenseDatabase(i))});
-})
+// $.getJSON("/api/v1/expenses",(data)=>{
+//     console.log("data",data)
+//     data.forEach((i)=>{store.dispatch(addExpenseDatabase(i))});
+// })
 const jsx = (
     <Provider store={store}>
     <AppRouter />
