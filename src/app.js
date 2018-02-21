@@ -25,7 +25,7 @@ var appRoot = document.getElementById('app');
 
 // store.dispatch(setTextFilter('bill'));
 // store.dispatch(setTextFilter('water'));
-//store.dispatch(sortByAmount());
+//store.dispatch(sortByAmount()); 
 //store.dispatch(sortByDate());
 // setTimeout(()=>{
 //   store.dispatch(setTextFilter('bill'));
